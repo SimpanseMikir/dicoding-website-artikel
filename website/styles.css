@@ -54,6 +54,20 @@ h2 {
     background-color: #45a049; /* Warna latar belakang saat hover */
 }
 
+#backToHome {
+    background-color: #4CAF50; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    padding: 10px 20px; /* Jarak dalam tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah elemen yang dapat diklik */
+    font-size: 16px; /* Ukuran font */
+}
+
+
+#backToHome:hover {
+    background-color: #45a049; /* Darker green background on hover */
+}
 
 footer {
     text-align: center;
