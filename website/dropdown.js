@@ -30,7 +30,7 @@ dropdowns.foreach(dropdown => {
        option.forEach(option => {
         option.classList.remove('active');
         });
+
         option.classlist.add('active');
-        });
         });
     });
