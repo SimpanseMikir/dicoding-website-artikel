@@ -110,14 +110,14 @@ h2 {
     background-color: #4CAF50;
   }
 
-  .caret{
-   width:  0;
-   height: o;
-   border-left: 5px solid transparent;
-   border right: 5px solid transparent;
-   border-top: 6px solid black;
-   transition: 0.3s; 
-  }
+  .caret {
+    width: 0;
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid black;
+    transition: 0.3s; 
+}
 
   .caret-rotate{
     transform: rotate(180deg);
@@ -150,6 +150,10 @@ h2 {
 .menu-open{
 display: block;
 opacity: 1;
+}
+
+.select.open + .menu {
+  display: block; 
 }
 
 
