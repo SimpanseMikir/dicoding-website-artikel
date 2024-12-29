@@ -147,7 +147,7 @@ h2 {
     background: #2a2d35;
 }
 
-.menu-open{
+.menu.open{
 display: block;
 opacity: 1;
 }

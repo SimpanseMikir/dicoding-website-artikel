@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const selected = dropdown.querySelector('.selected');
 
         select.addEventListener('click', () => {
+            console.log('Select clicked');
             select.classList.toggle('open');
             caret.classList.toggle('open');
             menu.classList.toggle('open');
