@@ -70,78 +70,76 @@ h2 {
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+  position: relative;
+  display: inline-block;
+}
   
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
   
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
   
-  .dropdown-content a {
-    color: black;
-  }
-
-  .select{
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    background-color: #6ca4af;
-  }
-
-
-  .select-clicked{
-    border: 2px #26489a solid;
-    box-shadow: 0 0 0.8em #26489a;
-  }
-
-  .select:hover{
-    background-color: #4CAF50;
-  }
-
-  .caret {
-    width: 0;
-    height: 0; 
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid black;
-    transition: 0.3s; 
+.dropdown-content a {
+  color: black;
 }
 
-  .caret-rotate{
-    transform: rotate(180deg);
-  }
+.select{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #6ca4af;
+}
 
-  .menu{
-    list-style-type: none;
-    padding: 0.2em 0.5em;
-    background: #35424a;
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
-    border: 1px solid #6ca4af;
-    border-radius: o.5em;
-    position: absolute;
-    color: #9fa5b5;
-    top: 3em; 
-    transform: translateX(-50%);
-    display: none;
-    transition: 0.2s;
-    z-index: 1;
-  }
 
-  .menu li:hover{
-    background: #2a2d35;
-  }
+.select-clicked{
+  border: 2px #26489a solid;
+  box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover{
+  background-color: #4CAF50;
+}
+
+.caret {
+  width: 0;
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid black;
+  transition: 0.3s; 
+}
+
+.caret-rotate{
+  transform: rotate(180deg);
+}
+
+.menu{
+  display: none; /* Hide the menu by default */
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  background: #81a2b6; /* Background color */
+  position: absolute; /* Position it below the select */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.menu-item {
+  padding: 10px;
+  color: #ffffff; /* Text color */
+ }
+.menu-item:hover {
+  background: #2a2d35; /* Background color on hover */
+}
 
 .active{
     background: #2a2d35;

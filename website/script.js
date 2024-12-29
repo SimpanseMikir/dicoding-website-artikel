@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const dropdowns = document.querySelectorAll('.dropdown');
+    const dropdowns = document.querySelectorAll('.dropdown'); 
 
     dropdowns.forEach(dropdown => {
         const select = dropdown.querySelector('.select');
         const caret = dropdown.querySelector('.caret');
         const menu = dropdown.querySelector('.menu');   
-        const options = dropdown.querySelectorAll('.menu li');
+        const options = dropdown.querySelectorAll('.menu-item'); 
         const selected = dropdown.querySelector('.selected');
 
         select.addEventListener('click', () => {
@@ -15,18 +15,19 @@ document.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('open');
         });
 
+       
         options.forEach(option => {
             option.addEventListener('click', () => {
-                selected.innerText = option.innerText;
+                selected.innerText = option.innerText; 
                 select.classList.remove('open');
                 caret.classList.remove('open');
                 menu.classList.remove('open');
 
                 options.forEach(opt => {
-                    opt.classList.remove('active');
+                    opt.classList.remove('active'); 
                 });
 
-                option.classList.add('active');
+                option.classList.add('active'); 
             });
         });
     });
